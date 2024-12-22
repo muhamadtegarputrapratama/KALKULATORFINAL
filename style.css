@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    flex-direction: column;
+    background-image: url(Aplikasi-Belajar-Matematika.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#kalkulator {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width:100%;
+    max-width:300px;
+}
+#kalkulator h2 {
+    text-align: center;
+}
+input[type="text"], button, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #f10303;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #000;
+}
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 5s linear infinite;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff4500;
+}
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
